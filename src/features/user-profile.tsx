@@ -23,7 +23,7 @@ const UserProfile = () => {
           <Button variant="link" className="relative gap-2 p-0 justify-start">
             <Avatar className="h-8 w-8">
               <AvatarImage
-                src={session?.user?.image!}
+                src={"/account-icon.svg"}
                 alt={session?.user?.name!}
               />
             </Avatar>

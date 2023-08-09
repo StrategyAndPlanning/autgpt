@@ -3,8 +3,8 @@ import { ChatMenu } from "@/features/chat/chat-menu/chat-menu";
 import { MainMenu } from "@/features/menu/menu";
 
 export const metadata = {
-  title: "AzureChatGPT",
-  description: "AzureChatGPT",
+  title: "AUTGPT",
+  description: "AUTGPT",
 };
 
 export default async function RootLayout({

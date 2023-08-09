@@ -1,7 +1,8 @@
 "use client";
 import { signIn } from "next-auth/react";
-import { Avatar, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
+import Image from 'next/image';
+
 import {
   Card,
   CardContent,
@@ -15,19 +16,16 @@ export const LogIn = () => {
     <Card className="flex gap-2 flex-col min-w-[300px]">
       <CardHeader className="gap-2">
         <CardTitle className="text-2xl flex gap-2">
-          <Avatar className="h-8 w-8">
-            <AvatarImage src={"ai-icon.png"} />
-          </Avatar>
+          <Image src="/aut-logo.svg" alt="Logo" width={50} height={25} />
           <span>
-            Azure<span className="text-muted-foreground">ChatGPT</span>
+            AUT<span className="text-muted-foreground">GPT</span>
           </span>
         </CardTitle>
         <CardDescription>
-          Login in with your GitHub or Microsoft 365 account
+          Login in with your Microsoft 365 account
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
-        <Button onClick={() => signIn("github")}>GitHub</Button>
         <Button onClick={() => signIn("azure-ad")}> Microsoft 365</Button>
       </CardContent>
     </Card>
