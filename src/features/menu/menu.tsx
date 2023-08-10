@@ -2,6 +2,7 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar";
 // import { BarChartHorizontalBig } from "lucide-react";
 import Link from "next/link";
 import { UserProfile } from "../user-profile";
+import Image from 'next/image';
 
 export const MainMenu = () => {
   return (
@@ -9,12 +10,10 @@ export const MainMenu = () => {
       <div className="flex gap-2 flex-col justify-between">
         <Link
           href="/"
-          className="w-10 h-10 items-center justify-center flex"
+          className="items-center justify-center flex"
           title="Home"
         >
-          <Avatar className="">
-            <AvatarImage src="/ai-icon.png" />
-          </Avatar>
+          <Image src="/aut-logo.svg" alt="Logo" width={60} height={30} />
         </Link>
       </div>
       <UserProfile />
