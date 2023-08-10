@@ -21,12 +21,12 @@ export const LogIn = () => {
             AUT<span className="text-muted-foreground">GPT</span>
           </span>
         </CardTitle>
-        <CardDescription>
-          Login in with your Microsoft 365 account
+        <CardDescription >
+          Login in with your AUT credentials
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
-        <Button onClick={() => signIn("azure-ad")}> Microsoft 365</Button>
+        <Button onClick={() => signIn("azure-ad")}> Login</Button>
       </CardContent>
     </Card>
   );
