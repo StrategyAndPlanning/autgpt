@@ -22,7 +22,7 @@ export const LogIn = () => {
           </span>
         </CardTitle>
         <CardDescription >
-          Login in with your AUT credentials.
+          Login in with your AUT credentials
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
