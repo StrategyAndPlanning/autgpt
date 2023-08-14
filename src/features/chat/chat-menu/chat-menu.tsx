@@ -6,7 +6,7 @@ import { NewChat } from "./new-chat";
 
 export const ChatMenu = async () => {
   const items = await FindAllChatThreadForCurrentUser();
-
+  
   return (
     <Menu>
       <MenuHeader className="justify-end">

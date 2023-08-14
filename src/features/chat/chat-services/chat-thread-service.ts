@@ -40,7 +40,7 @@ export const FindAllChatThreadForCurrentUser = async () => {
 
   const { resources } = await container.items
     .query<ChatThreadModel>(querySpec, {
-      partitionKey: await userHashedId(),
+      // partitionKey: await userHashedId(),  // TODO items aren't return when this code is used, as the items in cosmosdb don't have a partition value. Will need to look into it.
     })
     .fetchAll();
   return resources;
